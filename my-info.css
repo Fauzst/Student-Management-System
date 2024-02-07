@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container--dashboard {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 5% 95%;
+}
+
+.logo {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: #272B30;
+}
+
+.nav {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    top: 10%;
+    background-color: #f8f9fa;
+   
+}
+
+.semester {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    left: 50%;
+    background-color: #343A40;
+}
+
+.main-content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    overflow-y: scroll;
+}
+
+.info--card {
+    display: flex;
+    width: 90%;
+    padding: .8rem;
+}
+ 
+.element--card {
+    background-color: #E9ECEF;
+    padding: .4rem 0rem .4rem .4rem;
+    width: 200px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #596877;
+    font-size: 0.8rem;
+}
+
+.input--card {
+    background-color: #E9ECEF;
+    border: 1px solid #596877;
+    border-radius: 0px 5px 5px 0px;
+    width: 70%;
+    padding-left: 1rem;
+}
+
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content h1 {
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+hr {
+    background-color: #596877;
+    width: 90%;
+    margin: 0 auto;
+}
