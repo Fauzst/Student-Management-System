@@ -98,6 +98,31 @@ hr {
     margin: 0 auto;
 }
 
-.nav ul li {
-    border: 1px solid black;
+.active {
+    border-bottom: 2px solid #596877;
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+
+}
+
+.header-edit {
+    display: flex;
+    margin-left: 20px;
+    gap: 20px;
+}
+
+.header-edit button {
+    height: 30px;
+    width: 60px;
+    background-color: #0275d8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    top: 20px;   
+}
+
+.header-edit button:nth-child(3) {
+    background-color: green;
 }
