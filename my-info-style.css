@@ -16,6 +16,12 @@
     grid-row: 1/2;
     grid-column: 1/2;
     background-color: #272B30;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
 }
 
 .nav {
@@ -23,7 +29,11 @@
     grid-row: 2/3;
     top: 10%;
     background-color: #f8f9fa;
-   
+}
+
+.nav li {
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .semester {
@@ -31,8 +41,16 @@
     grid-row: 1/2;
     left: 50%;
     background-color: #343A40;
+    display: flex;
+    justify-content: center;
 }
 
+.semester button:hover {
+    color: white;
+    background-color: #272B30;
+    border: 1px solid white;
+
+}
 .main-content {
     grid-column: 2/3;
     grid-row: 2/3;
