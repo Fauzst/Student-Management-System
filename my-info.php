@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="my-info.css">
+    <link rel="stylesheet" href="info.css">
     
     
 </head>
@@ -15,9 +15,9 @@
         <ul>
           <li class="active"><img src="assets/images/user-regular.svg" width="10px"></img>  My Info</li>
           <li><img src="assets/images/list-solid.svg" width="12px">  Course Enlistment/Enrollment</li>
-          <li><img src="assets/images/book-solid.svg" width="12px"> Grade Viewing</li>
+          <li><img src="assets/images/book-solid.svg" width="12px"> <a href="grade.php">Grade Viewing</a></li>
           <li><img src="assets/images/comments-solid.svg" width="12px"> Faculty Evaluation</li>
-          <li>Signout</li>
+          <li><a href="index.php">Signout</a></li>
         </ul>
       </div>
       <div class="semester">
@@ -55,7 +55,7 @@
 
         <hr>
         <div class="header-edit">
-        <h1>Personal Information</h1> <button id="edit-submit" onclick="editInformation()">Edit</button>
+        <h1>Personal Information</h1> <button name="personal-info" onclick="editInformation()">Edit</button>
       </div>
         <form action="#" class="information" id="personal-info">
           <div class="info--card">
@@ -102,12 +102,14 @@
             <div class="element--card">Religion</div>
             <input type="text" class="input--card" placeholder="Catholic" disabled/>
           </div>
-        </form>
+
 
         <hr>
+        <div class="header-edit">
+          <h1>Address</h1> 
+</div>
 
-        <h1>Address</h1>
-        <form action="#" class="information">
+
           <div class="info--card">
             <div class="element--card">Block Number</div>
             <input type="text" class="input--card" placeholder="1" disabled/>
@@ -138,61 +140,70 @@
             <input type="text" class="input--card" placeholder="1090" disabled/>
           </div>
 
-        </form>
+
 
         <hr>
-
-        <h1>Family Information</h1>
-        <form action="#" class="information">
+<div class="header-edit">
+        <h1>Background Education</h1>
+</div>
           <div class="info--card">
-            <div class="element--card">Student ID</div>
-            <input type="text" class="input--card" placeholder="1012301321" disabled/>
+            <div class="element--card">Elementary</div>
+            <input type="text" class="input--card" placeholder="elementary school" disabled/>
           </div>
 
           <div class="info--card">
-            <div class="element--card">Email Address</div>
-            <input type="text" class="input--card" placeholder="juandelacruz@gmail.com" disabled/>
+            <div class="element--card">Junior Highschool</div>
+            <input type="text" class="input--card" placeholder="High Junior Highschoool" disabled/>
           </div>
 
           <div class="info--card">
-            <div class="element--card">Contact Number</div>
-            <input type="text" class="input--card" placeholder="0912 345 6789" disabled/>
+            <div class="element--card">Senior Highschool</div>
+            <input type="text" class="input--card" placeholder="Superhigh Senior Highschool" disabled/>
           </div>
 
-          <div class="info--card">
-            <div class="element--card">Program of Study</div>
-            <input type="text" class="input--card" placeholder="Bachelor of Science in Computer Engineering" disabled/>
-          </div>
-
-          <div class="info--card">
-            <div class="element--card">Learner's Reference Number</div>
-            <input type="text" class="input--card" placeholder="2022101010" disabled/>
-          </div>
-        </form>
 
       </div>
     </div>
 
     <script>
       function editInformation(){
-        var form = document.getElementById("personal-info");
+        var name = event.target.name; 
+        var form = document.getElementById(name);
         var inputs = form.getElementsByTagName("input");
         var button = document.querySelector(".header-edit");
+        var submit = document.querySelector("#submit-info");
+        
+
+
         for(let i = 0; i < inputs.length; i ++){
           inputs[i].removeAttribute("disabled")
         }
 
+        console.log(event.target.name)
+
+        if (submit){
+          return 
+        } else {
         var submitInfo = document.createElement("button")
         submitInfo.innerHTML = "Submit";
         submitInfo.setAttribute("type", "submit");
         submitInfo.setAttribute("id", "submit-info")
         submitInfo.setAttribute("onclick", "submitInfo()");
         button.appendChild(submitInfo);
-    
+        }
       }
 
       function submitInfo(){
+        var name = "personal-info"
+        var form = document.getElementById(name);
+        var inputs = form.getElementsByTagName("input")
         var element = document.getElementById("submit-info");
+        var form = document.getElementById("personal-information")
+        
+        console.log(inputs);
+        for(let i = 0; i < inputs.length; i ++){
+          inputs[i].disabled = true;
+        }
 
         if (element){
           element.remove();
