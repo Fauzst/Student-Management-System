@@ -14,8 +14,8 @@
       <div class="nav">
         <ul>
           <li><img src="assets/images/user-regular.svg" width="10px"></img>  <a href="my-info.php">My Info</a></li>
-          <li><img src="assets/images/list-solid.svg" width="12px"> <a href="enlistment.php"> Course Enlistment/Enrollment</a></li>
-          <li class="active"><img src="assets/images/book-solid.svg" width="12px"><a href="grade.php"> Grade Viewing</a></li>
+          <li class="active"><img src="assets/images/list-solid.svg" width="12px">  Course Enlistment/Enrollment</li>
+          <li><img src="assets/images/book-solid.svg" width="12px"> <a href="grade.php">Grade Viewing</a></li>
          
           <li><a href="index.php">Signout</a></li>
         </ul>
@@ -63,20 +63,64 @@
         <hr>
 
         <div class="header-edit">
-          <h1>My Grades</h1>
+          <h1>My Courses</h1>
         </div>
         <div class="table-container">
           <table id="enrollment">
             <tr>
-              <th>Academic Year</th>
-              <th>Semeseter</th>
               <th>Course Code</th>
               <th>Course Title</th>
-              <th>Units</th>
-              <th>Midterm</th>
-              <th>Final</th>
-              <th>Semestral</th>
+              <th>Lec</th>
+              <th>Lab</th>
+              <th>Section</th>
+              <th>Time</th>
+              <th>Room</th>
+              <th>Status</th>
               <th>Remarks</th>
+            </tr>
+            <tr>
+              <td>2023-2024</td>
+              <td>2nd</td>
+              <td>HUM1010</td>
+              <td>Philosophy</td>
+              <td>3</td>
+              <td>1.4</td>
+              <td>2</td>
+              <td>3</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td>2023-2024</td>
+              <td>2nd</td>
+              <td>HUM1010</td>
+              <td>Philosophy</td>
+              <td>3</td>
+              <td>1.4</td>
+              <td>2</td>
+              <td>3</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td>2023-2024</td>
+              <td>2nd</td>
+              <td>HUM1010</td>
+              <td>Philosophy</td>
+              <td>3</td>
+              <td>1.4</td>
+              <td>2</td>
+              <td>3</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td>2023-2024</td>
+              <td>2nd</td>
+              <td>HUM1010</td>
+              <td>Philosophy</td>
+              <td>3</td>
+              <td>1.4</td>
+              <td>2</td>
+              <td>3</td>
+              <td>Passed</td>
             </tr>
             <tr>
               <td>2023-2024</td>
@@ -92,7 +136,7 @@
 
           </table>
         </div>
-        <b>GWA: </b>
+
         </div>
         
       </div>

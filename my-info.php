@@ -14,9 +14,9 @@
       <div class="nav">
         <ul>
           <li class="active"><img src="assets/images/user-regular.svg" width="10px"></img>  My Info</li>
-          <li><img src="assets/images/list-solid.svg" width="12px">  Course Enlistment/Enrollment</li>
+          <li><img src="assets/images/list-solid.svg" width="12px">  <a href="enlistment.php"> Course Enlistment/Enrollment</a></li>
           <li><img src="assets/images/book-solid.svg" width="12px"> <a href="grade.php">Grade Viewing</a></li>
-          <li><img src="assets/images/comments-solid.svg" width="12px"> Faculty Evaluation</li>
+         
           <li><a href="index.php">Signout</a></li>
         </ul>
       </div>
